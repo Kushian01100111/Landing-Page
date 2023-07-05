@@ -1,0 +1,161 @@
+
+.App{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  height: auto;
+  margin: 0 auto;
+  padding: 0px 0 0 30px;
+  width: 100%;
+  background: linear-gradient(-45deg, #70E5FF, #BDF3FF, #fff, #fff, #BDF3FF, #9CEDFF);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+button{
+  border-radius: 30px;
+  padding: 25px 5px 20px 5px;
+  background-color: #555555;
+  color: #fff;
+  width: fit-content;
+  font-family:"GothicStd-Heavy" ,"GothicStd-Light",'Courier New', Courier, monospace;
+  font-size: 2.2rem;
+  line-height: 0.5;
+  border:  none;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  text-align: left;
+  gap: 30px;
+  max-width: 1290px;
+  margin: 0 auto;
+}
+.mainText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+.area{
+  margin-bottom: 5vh;
+  padding-left: 30px;
+}
+
+.mainText p{
+  text-align: center;
+}
+
+.mainText h1{
+  max-width: 500px;
+}
+.mainText a {
+  align-self: center;
+}
+
+.mainVideo .video{
+  height: 100%;
+  width: auto;
+}
+
+button{
+  font-size: 1.8rem;
+  width: 35vw;
+  padding: 30px 5px 27px 5px;
+}
+
+
+.parti2{
+  font-family:  "Clearface Italic",'Courier New', Courier, monospace;
+}
+
+@media (max-width: 1090px) {
+    .area{
+      margin: 0 auto;
+    }
+}
+
+
+
+@media (max-width: 960px) {
+
+  .area{
+    margin-bottom: 0;
+  } 
+  .area h1{
+    margin: 0 auto;
+  }
+
+
+  .mainVideo .video{
+     width: 100%;
+     height: auto;
+  }
+  button{
+    font-size: 1.8rem;
+    width: 80vw;
+    padding: 30px 5px 27px 5px;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  .mainText{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 10px;
+  }
+
+  .mainText p{
+    orphans: 3;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .main{
+   padding: 0; 
+  }
+  .App{
+    padding: 20px;
+  }
+  .area{
+    margin: unset;
+    padding: 0;
+  } 
+  .mainText h1{
+    max-width: 200px;
+  }
+  .area h1{
+    margin: unset   ;
+  }
+    button{
+      font-size: 1.2rem;
+      width: 80vw;
+      padding: 30px 5px 27px 5px;
+    }
+
+     .area .parti2{
+      max-width: 300px;
+    }
+}
