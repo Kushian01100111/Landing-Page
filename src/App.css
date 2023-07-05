@@ -5,7 +5,7 @@
   align-items: center;
   height: auto;
   margin: 0 auto;
-  padding: 0px 0 0 30px;
+  padding: 0 20px;
   width: 100%;
   background: linear-gradient(-45deg, #70E5FF, #BDF3FF, #fff, #fff, #BDF3FF, #9CEDFF);
   background-size: 400% 400%;
@@ -53,15 +53,17 @@ button{
 }
 .area{
   margin-bottom: 5vh;
-  padding-left: 30px;
+  margin-left: -30px;
 }
 
 .mainText p{
   text-align: center;
+  max-width: 790px;
 }
 
 .mainText h1{
   max-width: 500px;
+  margin: 0 auto;
 }
 .mainText a {
   align-self: center;
@@ -78,9 +80,21 @@ button{
   padding: 30px 5px 27px 5px;
 }
 
+hr{
+  border: 2px solid #000;
+  width: 80px;
+  margin: 0  auto;
+  display: block;
+}
+
 
 .parti2{
   font-family:  "Clearface Italic",'Courier New', Courier, monospace;
+}
+
+
+@media (max-width: 1200px) {
+  
 }
 
 @media (max-width: 1090px) {
@@ -128,26 +142,47 @@ button{
   .mainText p{
     orphans: 3;
   }
+
+  .area .parti2{
+    max-width: 140px;
+  }
+  .area .parti3{
+    max-width: fit-content;
+  }
+
+  .App{
+    padding: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .area{
+    margin-left: -40px;
+  } 
 }
 
 
 @media (max-width: 500px) {
+  hr{
+    width: 50px;
+  }
 
+  .area{
+    margin: 0 auto;
+    margin-left: 20px;
+  } 
   .main{
    padding: 0; 
   }
   .App{
     padding: 20px;
   }
-  .area{
-    margin: unset;
-    padding: 0;
-  } 
+ 
   .mainText h1{
     max-width: 200px;
   }
   .area h1{
-    margin: unset   ;
+    margin: 0 auto;
   }
     button{
       font-size: 1.2rem;
@@ -156,6 +191,28 @@ button{
     }
 
      .area .parti2{
-      max-width: 300px;
+      max-width: 100px;
     }
+    .area .parti3{
+      max-width: fit-content;
+    }
+}
+
+
+@media (max-width: 370px) {
+  .area{
+    margin: 0 auto;
+    margin-left: 10px;
+  } 
+  hr{
+    width: 40px;
+    border: 1px solid black;
+  }
+
+  /* .area .parti2{
+    max-width: 100px;
+  }
+  .area .parti3{
+    max-width: fit-content;
+  } */
 }

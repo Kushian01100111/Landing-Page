@@ -33,21 +33,28 @@ useEffect(() => {
           whileInView="whileInView"
           viewport={{ once: true }}>
               <div className='area'>
-                <h1>Hace Crecer con tu negocio</h1>
+                <h1>Hace Crecer con tus ventas</h1>
+                <m.hr animate={
+                  width <= 370 ? {x: 82, y: -16}
+                  : width <= 500 ? {x: 128, y: -22}
+                  : width <= 960 ? {x: 128, y: -31}  
+                  : width <= 1090 ? {x: -54, y: -31}
+                 : width <= 1200 ? {x: -45, y: -34}
+                  : {x: 95, y: -44}}/>
                 <m.h1 animate={
-                  width <= 370 ? {x: 34, y: -25}
-                  : width <= 500 ? {x: 106, y: -34}
-                  : width <= 1090 ? {x: 167, y: -48}
-                 : width <= 1200 ? {x: 186, y: -59}
-                  : {x: 315, y: -65}}  
-                className='parti2'> - en el </m.h1>
+                  width <= 370 ? {x: 141, y: -30}
+                  : width <= 500 ? {x: 201, y: -37} 
+                  : width <= 1090 ? {x: 250, y: -55}
+                 : width <= 1200 ? {x: 251, y: -61}
+                  : {x: 394, y: -77}}  
+                className='parti2'> en el </m.h1>
                 <m.h1 animate={
-                  width <= 370 ? {x: 7, y: -25}
-                  : width <= 500 ? {x: 63, y: -31}
+                  width <= 370 ? {x: 77, y: -28}
+                  : width <= 500 ? {x: 94, y: -31}
                   : width <= 1090 ? {x: 42, y: -50}
-                 : width <= 1200 ? {x: 99, y: -58}
-                  : {x: 99, y: -58} } 
-                className='parti2'>mundo digital.</m.h1>
+                 : width <= 1200 ? {x: 59, y: -60}
+                  : {x: 97, y: -82} } 
+                className='parti2 parti3'>mundo digital.</m.h1>
               </div>
               <p>Queremos acompañarte a que tu empresa se expanda y que sean cada vez las personas que conozcan tus productos y servicios</p>
               <a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"
