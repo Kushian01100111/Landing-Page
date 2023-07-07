@@ -52,12 +52,14 @@ button{
     gap: 25px;
 }
 .area{
-  margin-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12vh;
 }
 
 .mainText p{
   text-align: center;
-  max-width: 790px;
+  max-width: 730px;
 }
 
 .mainVideo .video{
@@ -67,13 +69,13 @@ button{
 
 
 button{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   width: 35vw;
   padding: 30px 5px 27px 5px;
 }
 
 .banner{
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -109,6 +111,9 @@ button{
     orphans: 3;
   }
 
+  .area{
+    margin-bottom: 2.5vh;
+  }
 }
 
 
