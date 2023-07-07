@@ -24,7 +24,6 @@
 	}
 }
 
-
 button{
   border-radius: 30px;
   padding: 25px 5px 20px 5px;
@@ -49,6 +48,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 .area{
@@ -58,19 +58,6 @@ button{
 .mainText p{
   text-align: center;
   max-width: 790px;
-}
-
-.mainText h1{
-  max-width: 500px;
-  margin: 0 auto;
-}
- .mainText .h1{
-  line-height: 55px;
-  max-width: none;
-}
-
-.mainText a {
-  align-self: center;
 }
 
 .mainVideo .video{
@@ -85,40 +72,14 @@ button{
   padding: 30px 5px 27px 5px;
 }
 
-hr{
-  border: 2px solid #000;
-  width: 80px;
-  margin: 0  auto;
-  display: block;
+.banner{
+  width: 100%;
+  height: auto;
 }
 
-
-.parti2{
-  font-family:  "Clearface Italic",'Courier New', Courier, monospace;
-}
-
-
-
-
-
-@media (max-width: 1200px) {
-  .h1{
-    margin: 0 auto;
-    max-width: min-content;
-  }
-}
 
 
 @media (max-width: 960px) {
-
-  .area{
-    margin-bottom: 0;
-    margin-left: -80px;
-  } 
-  .area h1{
-    margin: 0 auto;
-  }
-
 
   .mainVideo .video{
      width: 100%;
@@ -148,76 +109,26 @@ hr{
     orphans: 3;
   }
 
-  .area .parti2{
-    max-width: 140px;
-  }
-  .area .parti3{
-    max-width: fit-content;
-  }
-
-  .App{
-    padding: 0;
-  }
 }
 
-@media (max-width: 650px) {
-  .area{
-    margin-left: -40px;
-  } 
-}
 
 
 @media (max-width: 500px) {
-  hr{
-    width: 50px;
-  }
-
-  .area{
-    margin: 0 auto;
-    margin-left: 20px;
-  } 
   .main{
    padding: 0; 
   }
   .App{
     padding: 20px;
   }
- 
-  .mainText h1{
-    max-width: 200px;
-  }
-  .area h1{
-    margin: 0 auto;
-  }
+
     button{
       font-size: 1.2rem;
       width: 80vw;
       padding: 30px 5px 27px 5px;
     }
-
-     .area .parti2{
-      max-width: 100px;
-    }
-    .area .parti3{
-      max-width: fit-content;
-    }
 }
 
 
 @media (max-width: 370px) {
-  .area{
-    margin: 0 auto;
-    margin-left: 10px;
-  } 
-  hr{
-    width: 40px;
-    border: 1px solid black;
-  }
 
-  /* .area .parti2{
-    max-width: 100px;
-  }
-  .area .parti3{
-    max-width: fit-content;
-  } */
 }
